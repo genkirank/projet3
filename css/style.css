@@ -238,6 +238,7 @@ nav ul {
     list-style-type: none; /* supprime les puces des listes */
     margin: 0; /* suppression de la marge */
     padding: 0; /* suppression du rembourrage */
+font-size: 16px;
 }
 
 nav ul li {
@@ -265,6 +266,7 @@ nav ul li:hover a {
 }
 #Pheadline{
     margin-top: 0%;
+    font-size: 16px;
 }
 .GrandtitreH1 {
  margin: 0px;;
@@ -273,7 +275,10 @@ font-size: 22px;
 }
 form {
     display: flex;
-    align-items: center; /* Aligne les éléments verticalement au centre */
+    align-items: center;  /* Aligne les éléments verticalement au centre */
+    margin-top: 24px;
+    width: 377px;
+    height: 49px;
 }
 
 form img {
@@ -308,3 +313,19 @@ form input[type="submit"] {
  border: none;
  font-size: 15px;
 }
+.filtrebars{
+    display: flex;
+    flex-direction: row;
+}
+.infobar{
+    display: flex;
+    flex-direction:row ;
+    gap: 10px;
+}
+.logo-infobar {
+        border: 2px solid #000; /* Spécifie la bordure avec une épaisseur de 2px et une couleur noire */
+        border-radius: 50%; /* Rend les coins arrondis pour créer une bordure ronde */
+    margin: 10px;
+        height: 24px;
+width: 1,340px;
+    }
