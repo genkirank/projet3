@@ -329,3 +329,6 @@ form input[type="submit"] {
         height: 24px;
 width: 1,340px;
     }
+    footer{
+        background-color:gray;
+    }
