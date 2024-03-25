@@ -258,7 +258,11 @@ nav ul li:hover a {
     border-top: 3px #0065FC solid;
     color:#0065FC ;
 }
-
+.conteneur-1{
+    display: flex;
+    flex-direction:column ;
+    gap: 
+}
 .headline{
     display: flex;
     flex-direction: column;
@@ -316,7 +320,69 @@ form input[type="submit"] {
 .filtrebars{
     display: flex;
     flex-direction: row;
+    gap: 15px;
 }
+/*bouton icone */
+.bouton-Économique{
+    border-radius: 25px;
+    border:solid 2px  #D9D9D9 ;
+    background-color: white;
+    display: flex; /* Utilise Flexbox */
+    align-items: center; /* Centre verticalement les éléments */
+    justify-content: center; /* Centre horizontalement les éléments */
+    padding: 10px 20px; /* Ajoute du rembourrage */
+    cursor: pointer; /* Change le curseur au survol */
+    
+}
+.bouton-Économique{
+    margin-right: 5px; /* Ajoute un espacement entre l'image et le texte */
+}
+.bouton-Familial {
+    border-radius: 25px;
+    border:solid 2px  #D9D9D9 ;
+    background-color: white;
+    display: flex; /* Utilise Flexbox */
+    align-items: center; /* Centre verticalement les éléments */
+    justify-content: center; /* Centre horizontalement les éléments */
+    padding: 10px 20px; /* Ajoute du rembourrage */
+    cursor: pointer; /* Change le curseur au survol */
+}
+.bouton-Familial img{
+    margin-right: 5px; /* Ajoute un espacement entre l'image et le texte */
+}
+.bouton-Romantique{
+    border-radius: 25px;
+    border:solid 2px  #D9D9D9 ;
+    background-color: white;
+    display: flex; /* Utilise Flexbox */
+    align-items: center; /* Centre verticalement les éléments */
+    justify-content: center; /* Centre horizontalement les éléments */
+    padding: 10px 20px; /* Ajoute du rembourrage */
+    cursor: pointer; /* Change le curseur au survol */
+}
+.bouton-Romantique img{
+    margin-right: 5px; /* Ajoute un espacement entre l'image et le texte */
+
+}
+.bouton-Nos-pépites{
+    border-radius: 25px;
+    border:solid 2px  #D9D9D9 ;
+    background-color: white;
+    display: flex; /* Utilise Flexbox */
+    align-items: center; /* Centre verticalement les éléments */
+    justify-content: center; /* Centre horizontalement les éléments */
+    padding: 10px 20px; /* Ajoute du rembourrage */
+    cursor: pointer; /* Change le curseur au survol */   
+}
+.bouton-Nos-pépites img{
+    margin-right: 5px; /* Ajoute un espacement entre l'image et le texte */
+}
+/* fin bouton icone */
+
+#Filtres{
+    font-size: 18px;
+}
+
 .infobar{
     display: flex;
     flex-direction:row ;
