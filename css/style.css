@@ -58,22 +58,23 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    gap: 20px;
 }
 
 .hebergements-and-populaires section {
     background-color: var(--main-bg-color);
     border-radius: 20px;
     padding: 30px;
-    box-sizing: border-box;
 }
 
 /****** Hebergements ***********/
 .hebergements{
   padding:0px;
-  margin-right: 20px;
+  
   height: fit-content;
   align-items: center;
-  font-weight: 700;
+  width:100%;
+
 }
 .hebergements-cards{
   display:flex;
@@ -178,6 +179,7 @@ a {
     .hebergements {
         display: flexbox;
         width: 100%;
+        min-width:900px;
     }
 
     .populaires {
@@ -188,7 +190,7 @@ a {
     .populaires-cards {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        gap:220px;
     }
 
     .populaires-cards a {
@@ -261,7 +263,7 @@ nav ul li:hover a {
 .conteneur-1{
     display: flex;
     flex-direction:column ;
-    gap: 
+    gap: 25px; 
 }
 .headline{
     display: flex;
@@ -271,6 +273,7 @@ nav ul li:hover a {
 #Pheadline{
     margin-top: 0%;
     font-size: 16px;
+    margin-bottom: 0px;
 }
 .GrandtitreH1 {
  margin: 0px;;
@@ -280,7 +283,6 @@ font-size: 22px;
 form {
     display: flex;
     align-items: center;  /* Aligne les éléments verticalement au centre */
-    margin-top: 24px;
     width: 377px;
     height: 49px;
 }
@@ -387,14 +389,39 @@ form input[type="submit"] {
     display: flex;
     flex-direction:row ;
     gap: 10px;
+    margin-bottom: 35px;
+    align-items: center;
 }
-.logo-infobar {
-        border: 2px solid #000; /* Spécifie la bordure avec une épaisseur de 2px et une couleur noire */
-        border-radius: 50%; /* Rend les coins arrondis pour créer une bordure ronde */
-    margin: 10px;
-        height: 24px;
-width: 1,340px;
+    .card-subtitle{
+        font-size: 16px;
+        font-weight: 400px;
     }
+    .card-activite >img{
+      height: 380px;
+      object-fit: cover;
+      
+    }
+    .card-content-activite{
+      height:60px;
+      align-items: center;
+    }
+    #Afficherplus{
+        font-weight: 700;
+    }
+
     footer{
-        background-color:gray;
+        background-color:#F2F2F2;
+        display: flex;
+        flex-direction: row;
+        gap:20px;
+        padding:20px;
+        margin-top:40px;
     }
+    .footer-apropos, .footer-hebergement, .footer-Assistance{
+      width:450px;
+      display: flex;
+      flex-direction: column;
+      padding:20px;
+      line-height: 35px;
+    }
+    
