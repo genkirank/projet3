@@ -166,52 +166,6 @@ a {
     margin-bottom: 5px;
 }
 
-
-
-
-/* Le code ci-dessous correspond à la version responsive uniquement */
-
-/****** Media queries ***********/
-/* Medium devices (tablets, less/equal than 1024px) */
-@media (max-width: 1024px) {
-    .hebergements-and-populaires {
-        flex-direction: column;
-    }
-
-    .hebergements {
-        display: flexbox;
-        width: 100%;
-        min-width:900px;
-    }
-
-    .populaires {
-        width: 100%;
-        margin-top: 50px;
-    }
-
-    .populaires-cards {
-        display: flex;
-        flex-direction: row;
-        gap:220px;
-    }
-
-    .populaires-cards a {
-        width:100;
-    }
-
-    .populaires-cards .card-title {
-        font-size: 14px;
-    }
-
-    .populaires-cards .card-subtitle {
-        font-size: 13px;
-    }
-}
-
-/* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
-    /* ... */
-}
 /*css pour la page desktop */
 header {
 
@@ -258,10 +212,8 @@ nav ul li a {
     color: #0d0d0d; /* couleur du texte */
     text-decoration: none; /* supprime les soulignements des liens */
 }
-nav ul li:hover a {
-    border-top: 3px #0065FC solid;
-    color:#0065FC ;
-}
+
+
 .conteneur-1{
     display: flex;
     flex-direction:column ;
@@ -290,7 +242,7 @@ form {
 }
 
 form img {
-    background-color: gray;
+    background-color:#F2F2F2;
     padding: 15px; /* Ajout de remplissage pour un meilleur aspect */
     margin-right:-10px;
     
@@ -325,9 +277,10 @@ form input[type="submit"] {
     display: flex;
     flex-direction: row;
     gap: 15px;
+    height: 49
 }
 /*bouton icone */
-.bouton-Économique{
+.bouton-Filtres{
     border-radius: 25px;
     border:solid 2px  #D9D9D9 ;
     background-color: white;
@@ -336,50 +289,11 @@ form input[type="submit"] {
     justify-content: center; /* Centre horizontalement les éléments */
     padding: 10px 20px; /* Ajoute du rembourrage */
     cursor: pointer; /* Change le curseur au survol */
-    
-}
-.bouton-Économique{
-    margin-right: 5px; /* Ajoute un espacement entre l'image et le texte */
-}
-.bouton-Familial {
-    border-radius: 25px;
-    border:solid 2px  #D9D9D9 ;
-    background-color: white;
-    display: flex; /* Utilise Flexbox */
-    align-items: center; /* Centre verticalement les éléments */
-    justify-content: center; /* Centre horizontalement les éléments */
-    padding: 10px 20px; /* Ajoute du rembourrage */
-    cursor: pointer; /* Change le curseur au survol */
-}
-.bouton-Familial img{
-    margin-right: 5px; /* Ajoute un espacement entre l'image et le texte */
-}
-.bouton-Romantique{
-    border-radius: 25px;
-    border:solid 2px  #D9D9D9 ;
-    background-color: white;
-    display: flex; /* Utilise Flexbox */
-    align-items: center; /* Centre verticalement les éléments */
-    justify-content: center; /* Centre horizontalement les éléments */
-    padding: 10px 20px; /* Ajoute du rembourrage */
-    cursor: pointer; /* Change le curseur au survol */
-}
-.bouton-Romantique img{
     margin-right: 5px; /* Ajoute un espacement entre l'image et le texte */
 
 }
-.bouton-Nos-pépites{
-    border-radius: 25px;
-    border:solid 2px  #D9D9D9 ;
-    background-color: white;
-    display: flex; /* Utilise Flexbox */
-    align-items: center; /* Centre verticalement les éléments */
-    justify-content: center; /* Centre horizontalement les éléments */
-    padding: 10px 20px; /* Ajoute du rembourrage */
-    cursor: pointer; /* Change le curseur au survol */   
-}
-.bouton-Nos-pépites img{
-    margin-right: 5px; /* Ajoute un espacement entre l'image et le texte */
+.bouton-Filtres :hover{
+    background-color: (#DEEBFF);
 }
 /* fin bouton icone */
 
@@ -427,3 +341,61 @@ form input[type="submit"] {
       line-height: 35px;
     }
     
+
+
+
+/* Le code ci-dessous correspond à la version responsive uniquement */
+
+/****** Media queries ***********/
+/* Medium devices (tablets, less/equal than 1024px) */
+@media only screen and (min-width: 768px){
+    nav ul li:hover a {
+        border-top: 3px #0065FC solid;
+        color:#0065FC ;
+    }
+}
+
+@media (max-width: 1024px) {
+   
+    
+    .hebergements-and-populaires {
+        flex-direction: column;
+    }
+
+    .hebergements {
+        display: flexbox;
+        width: 100%;
+        min-width:900px;
+    }
+
+    .populaires {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .populaires-cards {
+        display: flex;
+        flex-direction: row;
+        gap:220px;
+    }
+
+    .populaires-cards a {
+        width:100;
+    }
+
+    .populaires-cards .card-title {
+        font-size: 14px;
+    }
+
+    .populaires-cards .card-subtitle {
+        font-size: 13px;
+    }
+}
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 767.98px) {
+    nav ul li:hover a {
+        border-bottom: 3px #0065FC solid;
+        color:#0065FC ;
+    }
+}
