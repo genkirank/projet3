@@ -199,7 +199,6 @@ nav ul {
     padding: 0; 
     font-size: 16px;
     display: flex;
-    gap: 68px;
 }
 
 nav ul li {
@@ -215,7 +214,10 @@ nav ul li a {
     color: #0d0d0d; /* couleur du texte */
     text-decoration: none; /* supprime les soulignements des liens */
 }
-
+.bouton-nav{
+    left: 1096px;
+    display: flex;
+}
 
 .conteneur-1{
     display: flex;
