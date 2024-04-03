@@ -101,6 +101,10 @@ a {
 }
 .card-content{
   margin-left: 5px;
+  gap: 8px;
+}
+.card-title , .card-subtitle{
+    margin-bottom: 0px;
 }
 /****** Populaires ***********/
 .populaires {
@@ -385,7 +389,15 @@ form input[type="submit"] {
 
 @media (max-width: 1024px) {
    
-    
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 1024px;
+        height: 35px;
+        padding: auto;
+    }
+
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -396,13 +408,14 @@ form input[type="submit"] {
         width: 924px;
         height: 612px;
      }
-     card img {
+     .card img {
         height: 124px;
         width: 268px;        
         overflow: hidden;
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
     }
+    
     
     .populaires {
         width: 924px;
