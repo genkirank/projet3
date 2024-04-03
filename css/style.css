@@ -221,12 +221,13 @@ nav ul li a {
 .bouton-nav{
     left: 1096px;
     display: flex;
+    gap: 68px;
 }
 
 .conteneur-1{
     display: flex;
     flex-direction:column ;
-    gap: 25px; 
+    gap: 35px; 
 }
 .headline{
     display: flex;
@@ -320,10 +321,15 @@ form input[type="submit"] {
     gap: 10px;
     margin-bottom: 35px;
     align-items: center;
+    font-weight: 400;
+}
+.infobar>h3{
+    font-weight: 400;
 }
 .card-subtitle {
     font-size: 16px;
     font-weight: 400px;
+    margin-top: 8px;
 }
 
 .card-activite-container {
@@ -344,6 +350,7 @@ form input[type="submit"] {
 .card-content-activite {
     height: 60px;
     align-items: center;
+    gap: 8px;
 }
 
 #Afficherplus {
@@ -397,6 +404,8 @@ form input[type="submit"] {
         height: 35px;
         padding: auto;
     }
+ 
+
 
     .hebergements-and-populaires {
         flex-direction: column;
@@ -447,6 +456,29 @@ form input[type="submit"] {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+    .activite {
+        width: 864px;
+        height: 270px;
+        gap: 0px;
+    }
+    .card-activite{
+        height: 270px;
+    }
+    .card-activite-container {
+        width: 193.5px; /* Largeur de chaque conteneur */
+        margin-right: 30px;/* Ajoute une marge à droite de chaque card-activite-container */
+        height: 270px;
+    }
+    
+    .card-activite-container:last-child {
+        margin-right: 0; /* Supprime la marge de droite pour le dernier élément */
+    }
+    
+    .card-activite img {
+        width: 193px;; /* Pour que l'image remplisse entièrement son conteneur */
+        height: 200px; /* Garantit que l'aspect ratio de l'image est conservé */
+    }
+    
 }
 
 /* Small devices (phones, less than 768px) */
