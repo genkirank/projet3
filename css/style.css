@@ -369,6 +369,8 @@ form input[type="submit"] {
         gap:20px;
         padding:20px;
         margin-top:100px;
+        width: 1340px;
+        height: 163px;
     }
     .footer-apropos, .footer-hebergement, .footer-Assistance{
       width:450px;
@@ -405,7 +407,7 @@ form input[type="submit"] {
         padding: auto;
     }
  
-
+  
 
     .hebergements-and-populaires {
         flex-direction: column;
