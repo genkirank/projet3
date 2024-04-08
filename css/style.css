@@ -283,11 +283,11 @@ form input[type="submit"] {
  border: none;
  font-size: 15px;
 }
-.filtrebars{
+.filtrebars,.quierie{
     display: flex;
     flex-direction: row;
     gap: 15px;
-    height: 49
+   
 }
 /*bouton icone */
 .bouton-Filtres {
@@ -369,7 +369,7 @@ form input[type="submit"] {
         gap:20px;
         padding:20px;
         margin-top:100px;
-        width: 1340px;
+        width: 100%;
         height: 163px;
     }
     .footer-apropos, .footer-hebergement, .footer-Assistance{
@@ -398,15 +398,24 @@ form input[type="submit"] {
 
 @media (max-width: 1024px) {
    
+  
     nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 1024px;
+        width: 100%;
         height: 35px;
         padding: auto;
     }
- 
+    .filtrebars{
+        display: flex;
+    flex-direction: column;
+    }
+
+    .quierie{
+    display: flex;
+    flex-direction:row ;
+ }
   
 
     .hebergements-and-populaires {
@@ -426,12 +435,16 @@ form input[type="submit"] {
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
     }
-    
-    
+    .card {
+        width: 268px;
+        height: auto;
+    }
     .populaires {
         width: 924px;
         height: 252px;
         margin-top: 50px;
+        padding-left: 10px;
+        margin-left: 0px;
     }
 
     .populaires-cards {
@@ -459,7 +472,7 @@ form input[type="submit"] {
         font-size: 13px;
     }
     .activite {
-        width: 864px;
+        width: 100%;
         height: 270px;
         gap: 0px;
     }
@@ -477,7 +490,7 @@ form input[type="submit"] {
     }
     
     .card-activite img {
-        width: 193px;; /* Pour que l'image remplisse entièrement son conteneur */
+        width: 193px;/* Pour que l'image remplisse entièrement son conteneur */
         height: 200px; /* Garantit que l'aspect ratio de l'image est conservé */
     }
     
