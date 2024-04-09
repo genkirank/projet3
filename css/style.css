@@ -16,6 +16,8 @@
 body {
     display: flex;
     justify-content: center;
+    width: 100%;
+    height: 100%;
 }
 
 .main-container {
@@ -87,7 +89,7 @@ a {
   border-radius: 20px;
   padding: 5px;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-  width:250px;
+
 }
 .populaire>.card{
   height: fit-content;
@@ -398,7 +400,10 @@ form input[type="submit"] {
 
 @media (max-width: 1024px) {
    
-  
+  .conteneur-2{
+    display:flex;
+    flex-direction: column;
+  }
     nav {
         display: flex;
         justify-content: space-between;
@@ -420,13 +425,14 @@ form input[type="submit"] {
 
     .hebergements-and-populaires {
         flex-direction: column;
+        width: 924px;
+        height: 612px;
     }
 
     .hebergements {
         display: flexbox;
         min-width:900px;
-        width: 924px;
-        height: 612px;
+      
      }
      .card img {
         height: 124px;
@@ -435,7 +441,7 @@ form input[type="submit"] {
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
     }
-    .card {
+    article .card {
         width: 268px;
         height: auto;
     }
@@ -443,8 +449,8 @@ form input[type="submit"] {
         width: 924px;
         height: 252px;
         margin-top: 50px;
-        padding-left: 10px;
-        margin-left: 0px;
+        padding-right: 10px;
+      
     }
 
     .populaires-cards {
@@ -452,10 +458,7 @@ form input[type="submit"] {
         flex-direction: row;
         gap:220px;
     }
-    .card{
-        width: 268px;
-        height: 207px;
-    }
+   
     .populaires-cards a {
         width:100;
     }
