@@ -354,7 +354,10 @@ form input[type="submit"] {
     align-items: center;
     gap: 8px;
 }
-
+.Section-Activités{
+    display: flex;
+    flex-direction: row;
+}
 #Afficherplus {
     font-weight: 700;
 }
@@ -496,7 +499,10 @@ form input[type="submit"] {
         width: 193px;/* Pour que l'image remplisse entièrement son conteneur */
         height: 200px; /* Garantit que l'aspect ratio de l'image est conservé */
     }
-    
+    footer {
+        width: 1023px; /* Le footer occupera toute la largeur de la fenêtre */
+        height: auto;
+    }
 }
 
 /* Small devices (phones, less than 768px) */
