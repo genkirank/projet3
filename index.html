@@ -29,17 +29,17 @@
                  <h1 class="GrandtitreH1"> Trouvez votre hébergement pour des vacances de rêve</h1>
                  <p id="Pheadline">En plein centre-ville ou en pleine nature</p>
                 </div>
-             <form class="form" action="">
-                <img src="/images/icone-projet3/Vector.png" alt="Icone de recherche">
-                <label for="search"></label>
-                <input type="text" id="search" name="search">
-                <input id="boutonsearch" type="submit" value="Rechercher">
-                <button type="submit" id="loupe">
-                    <img src="images/icone-projet3/Vector.png" alt="Loupe">
-                  </button>
-                  
-                <input type="submit" id="loupe" value="Rechercher">
-             </form>
+                <form class="form" action="">
+                    <img src="/images/icone-projet3/Vector.png" alt="Icone de recherche">
+                    <label for="search"></label>
+                    <input type="text" id="search" name="search">
+                    <input id="boutonsearch" type="submit" value="Rechercher">
+                
+                    <!-- Utilisation d'une balise <button> pour la loupe -->
+                    <button type="submit" id="loupe" class="loupe-btn">
+                        <img src="images/icone-projet3/Vector2.png" alt="Loupe">
+                    </button>
+              </form>
              <div class="filtrebars"> 
                 <h2 id="Filtres">Filtres</h2>
                 <div class="quierie">
@@ -72,13 +72,13 @@
             <div class="conteneur-2">
                      <div class="hebergements-and-populaires">
                         <section class="hebergements">
-                      <section class="hebergements-section">
+                      <div class="hebergements-section">
                         <div class="populaires-title">
                             <h2 class="section-title"id="Hébergements-à-Marseille">Hébergements à Marseille</h2>
                         </div>
                         <div class="hebergements-cards">
                             <a href="#">
-                                <article class="card">
+                                <article class="card" class="card-hebergement">
                                     <img src="images/hebergements/fred-kleber.jpg"
                                         alt="Image de la chambre d'hôtel montrant un lit">
                                     <div class="card-content">
@@ -98,7 +98,7 @@
                                 </article>
                             </a>
                             <a href="#">
-                                <article class="card">
+                                <article class="card"  class="card-hebergement">
                                     <img src="./images/hebergements/febrian-zakaria.jpg"
                                         alt="Image de la chambre d'hôtel montrant un lit">
                                     <div class="card-content">
@@ -118,7 +118,7 @@
                                 </article>
                             </a>
                             <a href="#">
-                                <article class="card">
+                                <article class="card"  class="card-hebergement">
                                     <img src="./images/hebergements/reisetopia.jpg"
                                         alt="Image de la chambre d'hôtel montrant un lit">
                                     <div class="card-content">
@@ -138,9 +138,9 @@
                                 </article>
                             </a>
                         </div>
-                        <div class="hebergements-cards">
+                        <div class="hebergements-cards" >
                             <a href="#">
-                                <article class="card">
+                                <article class="card" class="card-hebergement">
                                     <img src="./images/hebergements/annie-spratt.jpg"
                                         alt="Image de la chambre d'hôtel montrant un lit">
                                     <div class="card-content">
@@ -160,7 +160,7 @@
                                 </article>
                             </a>
                             <a href="#">
-                                <article class="card">
+                                <article class="card" class="card-hebergement">
                                     <img src="./images/hebergements/marcus-loke.jpg"
                                         alt="Image de la chambre d'hôtel montrant un lit">
                                     <div class="card-content">
@@ -180,7 +180,7 @@
                                 </article>
                             </a>
                             <a href="#">
-                                <article class="card">
+                                <article class="card" class="card-hebergement">
                                     <img src="./images/hebergements/nicate-lee.jpg"
                                         alt="Image de la chambre d'hôtel montrant un lit">
                                     <div class="card-content">
@@ -200,7 +200,7 @@
                                 </article>
                             </a>
                         </div>
-                    </section>
+                      </div>
                     <p id="Afficherplus">Afficher plus</p>
                 </section>
                 <section class="populaires">

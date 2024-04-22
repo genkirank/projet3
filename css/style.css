@@ -22,7 +22,6 @@ body {
 
 .main-container {
     width: 100%;
-    max-width: 1440px;
     padding: 0 50px;
     box-sizing: border-box;
 }
@@ -90,10 +89,11 @@ a {
   padding: 5px;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));}
    
-  .hebergements-cards>.card{
-  width: 250px;
-    height: 207px;
-}
+ .card-hebergement{
+    width: 250px;
+    height: 207px
+ }
+
 .populaire>.card{
   height: fit-content;
 }
@@ -146,13 +146,15 @@ a {
     display: flex;
     margin-top: 33px;
     width: 369px;
+    height: 146px;
 }
 
 .populaires-cards img {
     width: 33%;
-    height: 136px;
+    height: 100%;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
+    border-top-right-radius:0px;
 }
 
 .populaires-cards .card-content {
@@ -294,6 +296,11 @@ form input[type="submit"] {
  border: none;
  font-size: 15px;
 }
+.loupe-btn,
+.loupe-input {
+    display: none;
+    }
+
 .filtrebars,.quierie{
     display: flex;
     flex-direction: row;
@@ -395,26 +402,19 @@ form input[type="submit"] {
     }
     
 
-
-
-/* Le code ci-dessous correspond à la version responsive uniquement */
+  /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
-@media only screen and (min-width: 768px){
-    nav ul li:hover a {
-        border-top: 3px #0065FC solid;
-        color:#0065FC ;
-        padding-top: 14px;
-        margin: 0px;
-    }
-}
-
 @media (max-width: 1024px) {
-   
+    .hebergements-and-populaires {
+        flex-direction: column;
+    }
+    
   .conteneur-2{
     display:flex;
     flex-direction: column;
+    margin-left: -10px;
   }
     nav {
         display: flex;
@@ -444,8 +444,13 @@ form input[type="submit"] {
     .hebergements {
         display: flexbox;
         min-width:900px;
-      
+        padding-right: 0px;
      }
+     #card-hebergement{
+        width: 268px;
+        height: 207px;
+     }
+      
      .card img {
         height: 124px;
         width: 268px;        
@@ -478,7 +483,13 @@ form input[type="submit"] {
         width: 273px;
         height: 146px;
     }
-
+    .populaires-cards img {
+        width: 33%;
+        height: 100%;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-top-right-radius:0px;
+    }
     .populaires-cards .card-title {
         font-size: 14px;
     }
@@ -510,17 +521,40 @@ form input[type="submit"] {
         height: 200px; /* Garantit que l'aspect ratio de l'image est conservé */
     }
     footer {
-        width: 1023px; /* Le footer occupera toute la largeur de la fenêtre */
+        width: auto; /* Le footer occupera toute la largeur de la fenêtre */
         height: auto;
     }
 }
 
 /* Small devices (phones, less than 768px) */
+
 @media (max-width: 767.98px) {
     nav ul li:hover a {
         border-bottom: 3px #0065FC solid;
         color:#0065FC ;
     }
+   
+   nav  {
+    display: flex;
+    flex-direction: column;
+    height: 115px:
+    width: 100%:
+   }
+   .logo{
+    padding: 30px;
+   }
+   .bouton-nav{
+    width: 375px;
+   }
+   .conteneur-1{
+    display: flex;
+    flex-direction: column;
+   }
+   .quierie{
+    flex-wrap: nowrap;
+   }
+   
+   
     #loupe {
         background-image: url('images/icone-projet3/Vector.png');
         background-size: contain; /* Ajuster la taille de l'image pour qu'elle soit contenue dans le bouton */
@@ -528,5 +562,32 @@ form input[type="submit"] {
         height: 50px; /* Hauteur de votre image */
         border: none; /* Supprimer les bordures du bouton */
       }
-      
+      .loupe-btn {
+        display: inline-block; /* Afficher la loupe en tant que bouton */
+    }
+
+    .loupe-input {
+        display: none; /* Cacher le bouton de la loupe en tant qu'input */
+    }
+    .hebergements-cards{
+    display: flex;
+    flex-direction: column;}
+    .populaires{
+        width:50%;
+        height: 50%;
+    }
+    .populaires-cards{
+        display: flex;
+        flex-direction: column;
+    }
+    .activite{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    footer{
+        width: 375px;;
+    }
 }
+
+      
