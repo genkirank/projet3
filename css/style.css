@@ -241,6 +241,7 @@ nav ul li a {
     display: flex;
     flex-direction: column;
     gap:30px;
+    width:100%;
 }
 .headline{
     display: flex;
@@ -525,7 +526,7 @@ form input[type="submit"] {
 @media (max-width: 767.98px) {
     .main-container{
         width: 100%;
-        padding: 0%;^
+        padding: 0%;
     }
     nav ul li:hover a {
         border-bottom: 3px #0065FC solid;
@@ -542,7 +543,8 @@ form input[type="submit"] {
     padding: 30px;
    }
    .bouton-nav{
-    width: 375px;
+    width: 100%;
+    padding-left: 50px;
    }
    .conteneur-1{
     display: flex;
@@ -551,7 +553,8 @@ form input[type="submit"] {
    .quierie{
     flex-wrap: wrap;
     display: flex;
-    width: 375PX;
+    width: 100%;
+    column-gap: 6PX;
    }
    
    
@@ -570,6 +573,12 @@ form input[type="submit"] {
     .loupe-input {
         display: none /* Cacher le bouton de la loupe en tant qu'input */
     }
+    .GrandtitreH1{
+        width: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    }
     #boutonsearch{
         display: none;
     }
@@ -580,6 +589,7 @@ form input[type="submit"] {
         display: flex;
         flex-direction: column-reverse;
         width: auto;
+        padding: 0px;
     }
     .hebergements{
         width:fit-content;
@@ -587,26 +597,48 @@ form input[type="submit"] {
     .hebergements-cards{
     display: flex;
     flex-direction: column;}
+   
     .hebergements-section{
         width:fit-content;
+    }
+    .card{
+        width: 335px;
     }
     .populaires{
         width: 375px;
         height: 50%;
+        margin-top: 0%;
+    }
+    .populaires-cards .card{
+        margin-top: 10px;
+        width: 335px;
+        height: 146px;
+    }
+    .hebergements-and-populaires section{
+        padding:0%;
+        width: 100%;
+        border-radius: 0%;
+        background-color:white;
     }
     .populaires-cards{
         display: flex;
         flex-direction: column;
+        gap: 15PX;
+    }
+    .populaires-cards a{
+        width: ;
     }
     .activite{
         display: flex;
         flex-direction: column;
         height: auto;
+        width: 375px;
     }
     footer{
         width: 375px;
         display: flex;
         flex-direction: column;
+    padding: 0%;
     }
     .footer-apropos,.footer-hebergement,.footer-Assistance{
         width: fit-content;
