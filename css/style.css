@@ -590,6 +590,9 @@ form input[type="submit"] {
     .form {
         width: 335px;
     }
+    .bouton-Filtres{
+        width:40%;
+    }
     .conteneur-2{
         margin-left: 0%;
     }
@@ -619,7 +622,10 @@ form input[type="submit"] {
     }
     .hebergements-and-populaires .populaires{
         height: 100%;
-        width: 100%;
+        width: 100%
+        margin-top: 0px;
+        padding-top: 30px;
+        padding-bottom: 30px;
     }
     .populaires-cards .card{
         margin-top: 10px;
@@ -634,10 +640,10 @@ form input[type="submit"] {
     .populaires-cards{
         display: flex;
         flex-direction: column;
-        gap: 15PX;
-        padding-bottom: 30px;
-    
-
+        margin-left: 5%;
+    }
+    .fa-solid {
+        margin-right: 10px;
     }
    
     .activite{
