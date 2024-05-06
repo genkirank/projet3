@@ -12,16 +12,19 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
 </head>
+    <header>
+        <nav>
+            <img src="images/logo/Booki.png" alt="Logo nav bar" class="logo">
+            <ul class="bouton-nav">
+                <li><a href="#Hébergements-à-Marseille">Hébergements</a></li>
+                <li><a href="#Activité-a-Marseille">Activité </a></li>
+            </ul>
+        </nav>
+
+    </header>
         <body>
             <main class="main-container">
                             <div class="conteneur-1">
-                                    <nav>
-                                        <img src="images/logo/Booki.png" alt="Logo nav bar" class="logo">
-                                        <ul class="bouton-nav">
-                                            <li><a href="#Hébergements-à-Marseille">Hébergements</a></li>
-                                            <li><a href="#Activité-a-Marseille">Activité </a></li>
-                                        </ul>
-                                    </nav>
                                     <div class="headline">
                                         <h1 class="GrandtitreH1"> Trouvez votre hébergement pour des vacances de rêve</h1>
                                         <p id="Pheadline">En plein centre-ville ou en pleine nature</p>
@@ -31,8 +34,6 @@
                                         <label for="search"></label>
                                         <input type="text" id="search" name="search">
                                         <input id="boutonsearch" type="submit" value="Rechercher">
-                                    
-                                        <!-- Utilisation d'une balise <button> pour la loupe -->
                                         <button type="submit" id="loupe" class="loupe-btn">
                                             <img src="images/icone-projet3/Vector2.png" alt="Loupe">
                                         </button>
@@ -77,7 +78,7 @@
                                 </div>
                                 <div class="hebergements-cards">
                                     <a href="#">
-                                        <article class="card" class="card-hebergement">
+                                        <article class="card card-hebergement">
                                         <img src="images/hebergements/fred-kleber.jpg" alt="Image de la chambre d'hôtel montrant un lit">
                                             <div class="card-content">
                                                 <div class="card-txt">
@@ -96,7 +97,7 @@
                                         </article>
                                     </a>
                                     <a href="#">
-                                        <article class="card"  class="card-hebergement">
+                                        <article class="card card-hebergement">
                                             <img src="./images/hebergements/febrian-zakaria.jpg" alt="Image de la chambre d'hôtel montrant un lit">
                                             <div class="card-content">
                                                 <div class="card-txt">
@@ -115,7 +116,7 @@
                                         </article>
                                     </a>
                                     <a href="#">
-                                        <article class="card"  class="card-hebergement">
+                                        <article class="card card-hebergement">
                                             <img src="./images/hebergements/reisetopia.jpg" alt="Image de la chambre d'hôtel montrant un lit">
                                             <div class="card-content">
                                                 <div class="card-txt">
@@ -136,7 +137,7 @@
                                 </div>
                                 <div class="hebergements-cards" >
                                     <a href="#">
-                                        <article class="card" class="card-hebergement">
+                                        <article class="card card-hebergement">
                                             <img src="./images/hebergements/annie-spratt.jpg" alt="Image de la chambre d'hôtel montrant un lit">
                                             <div class="card-content">
                                                 <div class="card-txt">
@@ -155,7 +156,7 @@
                                         </article>
                                     </a>
                                     <a href="#">
-                                        <article class="card" class="card-hebergement">
+                                        <article class="card card-hebergement">
                                             <img src="./images/hebergements/marcus-loke.jpg" alt="Image de la chambre d'hôtel montrant un lit">
                                             <div class="card-content">
                                                 <div class="card-txt">
@@ -174,7 +175,7 @@
                                         </article>
                                     </a>
                                     <a href="#">
-                                        <article class="card" class="card-hebergement">
+                                        <article class="card card-hebergement">
                                             <img src="./images/hebergements/nicate-lee.jpg" alt="Image de la chambre d'hôtel montrant un lit">
                                             <div class="card-content">
                                                 <div class="card-txt">
@@ -192,9 +193,10 @@
                                             </div>
                                         </article>
                                     </a>
+
                                 </div>
                             </div>
-                            <p id="Afficherplus">Afficher plus</p>
+                            <p id="Afficherplus">Afficher plus</p>  
                         </section>
                     
                         <section class="populaires">
@@ -318,25 +320,25 @@
                     </section>
                 </div>
             </main>
+            <footer>
+                <div class="footer-apropos">
+                    <h2>À propos</h2>
+                    <div>Fonctionnement du site</div>
+                    <div>Conditions générales</div>
+                    <div>Données et confidentialité</div>
+                </div>
+                <div class="footer-hebergement">
+                     <h2>Nos hebergements</h2>
+                     <div>Fonctionnement du site</div>
+                     <div>Conditions générales</div>
+                     <div>Données et confidentialité</div>
+                </div>
+                <div class="footer-Assistance">
+                    <h2>Assistance</h2>
+                    <div>Fonctionnement du site</div>
+                    <div>Conditions générales</div>
+                    <div>Données et confidentialité</div>
+                </div>
+            </footer>
         </body>
-        <footer>
-            <div class="footer-apropos">
-                <h2>À propos</h2>
-                <div>Fonctionnement du site</div>
-                <div>Conditions générales</div>
-                <div>Données et confidentialité</div>
-            </div>
-            <div class="footer-hebergement">
-                 <h2>Nos hebergements</h2>
-                 <div>Fonctionnement du site</div>
-                 <div>Conditions générales</div>
-                 <div>Données et confidentialité</div>
-            </div>
-            <div class="footer-Assistance">
-                <h2>Assistance</h2>
-                <div>Fonctionnement du site</div>
-                <div>Conditions générales</div>
-                <div>Données et confidentialité</div>
-            </div>
-        </footer>
 </html>
