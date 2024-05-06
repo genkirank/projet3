@@ -20,12 +20,17 @@ body {
     flex-direction: column;
     align-items: center;
     margin: 0%;
+    gap: 35px;
 }
 
 .main-container {
     width: 100%;
     padding: 0 50px;
     box-sizing: border-box;
+    gap: 35px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0%;
 }
 
 a {
@@ -36,12 +41,6 @@ a {
 .section-title {
     margin: 0;
     font-size: 22px;
-}
-
-
-
-.card img {
-    object-fit: cover;
 }
 
 .card-title {
@@ -65,51 +64,56 @@ a {
 
 .hebergements-and-populaires section {
     background-color: var(--main-bg-color);
-    border-radius: 20px;
+    border-radius: 15px;
     padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
-
+.hebergements-section{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
 /****** Hebergements ***********/
-.hebergements{
-  padding:0px;
-  height: 1;
-  height: fit-content
-  align-items: center;
-  width:100%;
-}
 .hebergements-cards{
   display:flex;
   flex-direction: row;
   gap:30px;
-  margin-top:20px;
 }
 .card{
   background-color: white;
   border-radius: 20px;
-  padding: 5px;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));}
-   
- .card-hebergement{
-    width: 250px;
-    height: 207px
- }
 
-.populaire>.card{
+  article.card.card-hebergement{
+    padding-bottom: 15px;
+    gap: 4px;
+    display: flex;
+    flex-direction: column;
+  }
+ 
+
+.populaire .card{
   height: fit-content;
 }
-.card>img{
+.card img{
   height: 124px;
-  overflow: hidden;
-  width:250px;
-  border-top-left-radius:15px;
-  border-top-right-radius: 15px;
+  object-fit: cover;
+  width: 240px;
+border-radius: 20px 20px 0px 0px;
+border: solid 5px #FFF;
+bo
 }
-.card-content{
-  margin-left: 5px;
-  gap: 8px;
+
+.card-txt{
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+    padding:0px 15px 0px 15px;
 }
 .card-title , .card-subtitle{
-    margin-bottom: 0px;
+    margin: 0px;
 }
 /****** Populaires ***********/
 section.populaires {
@@ -121,8 +125,9 @@ section.populaires {
 
 .populaires-title {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    font-size: 22px;
+    font-weight:700 ;
 }
 .activite{
   display: flex;
@@ -183,55 +188,51 @@ section.populaires {
 
 /*css pour la page desktop */
 header {
-
-    padding: 10px; /* ajout de marge intérieure */
     color: #000000; /* couleur du texte */
-    width: 1440px;
-    height: 79px;
+    width: 100%;
+    padding: 0%;
 }
 main{
     margin-top: 30px;
 }
-
+.logo{
+    height: 19px;
+    width: 61px;
+    padding: 30px 50px 30px 50px;
+}
 nav {
     display: flex; /* utilise flexbox pour aligner les éléments */
-    justify-content: space-between ; /* aligne les éléments à l'extrémité de chaque côté */
+    gap: 935px;
     align-items: center; /* centre verticalement les éléments */
     width: 100%;
-    height: 35px;
-    padding: auto;   
-}
-
-.logo {
-    width: 61px; /* ajustez la taille de votre logo selon vos besoins */
-    height: 19px;
 }
 
 nav ul {
     list-style-type: none;
     margin: 0; 
     padding: 0; 
-    font-size: 16px;
     display: flex;
+    gap: 68px;
+}
+nav li a:hover{
+    color: #0065FC;
 }
 
 nav ul li {
-    display: inline; /* affiche les éléments de la liste en ligne */
-    margin-left: 20px; /* ajout d'un espacement entre les éléments */
-}
-
-nav ul li:first-child {
-    margin-left: 0; /* annule la marge gauche du premier élément */
+    display: inline; 
+    font-weight: 400;
 }
 
 nav ul li a {
-    color: #0d0d0d; /* couleur du texte */
-    text-decoration: none; /* supprime les soulignements des liens */
+    color: #0d0d0d; 
+    text-decoration: none; 
+    font-weight: 400;
+
 }
 .bouton-nav{
-    left: 1096px;
+    padding: 0px 50px 0px 50px;
     display: flex;
-    gap: 68px;
+    gap: 68px
 }
 
 .conteneur-1{
@@ -242,7 +243,7 @@ nav ul li a {
 .conteneur-2{
     display: flex;
     flex-direction: column;
-    gap:30px;
+    gap: 35px;
     width:100%;
 }
 .headline{
@@ -324,13 +325,13 @@ form input[type="submit"] {
     border: solid 2px #D9D9D9;
     background-color: white; 
     display: flex; 
-    justify-content: center;
+    align-items: center;
     padding: 4px 19px 4px 19px;
     cursor: pointer; 
-    margin-right: 5px; /* Ajoute un espacement entre l'image et le texte */
-    gap: 15px;
+    gap: 10px;
     font-size: 17px;
     font-weight: 700;
+    height: 50px;
 }
 
 .bouton-Filtres:hover {
@@ -341,25 +342,20 @@ form input[type="submit"] {
 
 #Filtres{
     font-size: 18px;
+    font-weight: 700;
 }
 
 .infobar{
     display: flex;
     flex-direction:row ;
     gap: 10px;
-    margin-bottom: 35px;
     align-items: center;
     font-weight: 400;
 }
 .infobar>h3{
     font-weight: 400;
+    margin: 0%;
 }
-.card-subtitle {
-    font-size: 16px;
-    font-weight: 400px;
-    margin-top: 8px;
-}
-
 .card-activite-container {
     background-color: #FFFFFF;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -401,8 +397,6 @@ form input[type="submit"] {
         flex-direction: row;
         gap:20px;
         padding:20px;
-        margin-top:100px;
-    
     }
     .footer-apropos, .footer-hebergement, .footer-Assistance{
       width:450px;
@@ -425,7 +419,7 @@ form input[type="submit"] {
   }
     nav {
         display: flex;
-        justify-content: space-between;
+        gap: 510px;
         align-items: center;
         width: 100%;
         height: 35px;
@@ -440,16 +434,9 @@ form input[type="submit"] {
     display: flex;
     flex-direction:row ;
  }
-  
 
-    .hebergements-and-populaires {
-        flex-direction: column;
-        width: 924px;
-
-    }
-
-    .hebergements {
-        display: flexbox;
+    section .hebergements {
+        display: flex;
         padding-right: 0px;
      }
      #card-hebergement{
@@ -539,7 +526,7 @@ form input[type="submit"] {
         margin-left: 5%;
     }
     
-    nav ul li:hover a {
+    nav ul li:hover  {
         border-bottom: 3px #0065FC solid;
         color:#0065FC ;
     }
@@ -554,10 +541,8 @@ form input[type="submit"] {
     padding: 30px;
    }
 
-   nav ul li:first-child{
-    margin-left: -30px;
-   }
-   .conteneur-1{
+
+  conteneur-1{
     display: flex;
     flex-direction: column;
    }
