@@ -86,24 +86,27 @@ a {
   border-radius: 20px;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));}
 
-  article.card.card-hebergement{
+  article.card.card-hebergement  {
     padding-bottom: 15px;
     gap: 4px;
     display: flex;
     flex-direction: column;
   }
- 
+  article.card.card-hebergement .card-rating {
+    padding:0px 15px 0px 15px;
+}
+  
+
 
 .populaire .card{
   height: fit-content;
 }
 .card img{
-  height: 124px;
+  height: 114px;
   object-fit: cover;
   width: 240px;
 border-radius: 20px 20px 0px 0px;
 border: solid 5px #FFF;
-bo
 }
 
 .card-txt{
@@ -114,6 +117,8 @@ bo
 }
 .card-title , .card-subtitle{
     margin: 0px;
+    font-size: 14px;
+    font-weight: 400;
 }
 /****** Populaires ***********/
 section.populaires {
@@ -128,26 +133,14 @@ section.populaires {
     align-items: center;
     font-size: 22px;
     font-weight:700 ;
+    gap: 142PX;
 }
-.activite{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 30px;
-  margin-left: -100px;
-}
-.card-activite>img{
-  max-width:290px;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
 
-}
-.card-activite{
-  background-color: white;
-  border-radius: 20px;
-  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-  max-width: 298px;
-  height: 380px;
+.populaires-cards{
+display: flex;
+flex-direction: column;
+gap: 30px;
+
 }
 
 .populaires-cards .card {
@@ -157,11 +150,13 @@ section.populaires {
 }
 
 .populaires-cards img {
-    width: 33%;
-    height: 100%;
+    width: 32%;
+    height: 136px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     border-top-right-radius:0px;
+    border-right-width: 0px;
+
 }
 
 .populaires-cards .card-content {
@@ -176,6 +171,8 @@ section.populaires {
 .populaires-cards .card-title {
     margin-top: 10px;
     margin-bottom: 4px;
+    font-size: 16px;
+    font-weight: 700;
 }
 
 .populaires-cards .card-subtitle {
@@ -356,25 +353,39 @@ form input[type="submit"] {
     font-weight: 400;
     margin: 0%;
 }
-.card-activite-container {
+
+#Afficherplus {
+    font-weight: 700;
+    margin: 0%;
+    font-size: 18px;
+}
+
+#Activité-a-Marseille {
+    font-size: 22px;
+    margin: 0%;
+    font-weight: 700;
+}
+.activite{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  
+  }
+  .card-activite-container {
     background-color: #FFFFFF;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     height: 439px;
     border-radius: 20px;
-    text-align:center;
     font-size: 16px;
 }
 
-.card-activite > img {
-    height: 380px;
-    object-fit: cover;
-}
 
 .card-content-activite {
     height: 60px;
     align-items: center;
     gap: 8px;
+    padding: 20px, 19px 20px 19px;
 }
 .Section-Activités{
     display: flex;
@@ -382,14 +393,21 @@ form input[type="submit"] {
     padding: 30px;
     gap:30px;
 }
-#Afficherplus {
-    font-weight: 700;
-}
+  .card-activite>img{
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 380px;
+    object-fit: cover;
+  }
 
-#Activité-a-Marseille {
-    margin-left: 5px;
-    font-size: 22px;
-}
+  .card-activite{
+    background-color: white;
+    border-radius: 20px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    width: 297px;
+    height: 380px
+  }
 
     footer{
         background-color:#F2F2F2;
