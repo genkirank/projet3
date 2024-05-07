@@ -230,7 +230,7 @@ nav ul li a {
     color: #0d0d0d; 
     text-decoration: none; 
     font-weight: 400;
-
+    font-size: 16px;
 }
 .bouton-nav{
     padding: 0px 50px 0px 50px;
@@ -563,9 +563,7 @@ form input[type="submit"] {
         padding: 0%;
 
     }
-    .conteneur-1{
-        margin-left: 5%;
-    }
+  
     
     nav ul li:hover  {
         border-bottom: 3px #0065FC solid;
@@ -575,17 +573,20 @@ form input[type="submit"] {
    nav  {
     display: flex;
     flex-direction: column;
-    height: 115px;
     width: 100%;
+    gap: 0px;
    }
    .logo{
     padding: 30px;
    }
+   body{
+    gap: 30px;
+   }
 
-
-  conteneur-1{
+  .conteneur-1{
     display: flex;
     flex-direction: column;
+    padding: 0px 20px 0px 20px;
    }
    .quierie{
     flex-wrap: wrap;
@@ -609,13 +610,17 @@ form input[type="submit"] {
       .loupe-btn {
         display: inline-block; /* Afficher la loupe en tant que bouton */
     }
+    button#loupe.loupe-btn{
+        background-color: #0065FC;
+    }
 
     .loupe-input {
         display: none /* Cacher le bouton de la loupe en tant qu'input */
     }
     .GrandtitreH1{
         width: auto;
-    padding-right: 20px;
+    font-weight: 700;
+    font-size: 22px;
     }
     #boutonsearch{
         display: none;
