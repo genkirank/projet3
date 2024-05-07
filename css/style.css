@@ -385,7 +385,14 @@ form input[type="submit"] {
     height: 60px;
     align-items: center;
     gap: 8px;
-    padding: 20px, 19px 20px 19px;
+    padding: 20px 19px 20px 19px;
+}
+.card-content-activite .card-txt {
+    padding: 0%;
+}
+.card-content-activite .card-txt .card-title {
+    font-size: 16px;
+    font-weight: 700;
 }
 .Section-Activités{
     display: flex;
@@ -413,17 +420,26 @@ form input[type="submit"] {
         background-color:#F2F2F2;
         display: flex;
         flex-direction: row;
-        gap:20px;
-        padding:20px;
+        width: auto;
+        margin-left: 50px;
+        margin-right: 50px;
     }
     .footer-apropos, .footer-hebergement, .footer-Assistance{
-      width:450px;
+      width: 406px;
       display: flex;
       flex-direction: column;
       padding:20px;
-      line-height: 35px;
+      gap: 15px;
     }
-    
+    h2{
+        font: size 18px;
+        font-weight: 700;
+        margin: 0%;
+    }
+    .footer-link{
+        font-size: 16px;
+        font-weight: 400;
+    }
 
   /* Le code ci-dessous correspond à la version responsive uniquement */
 
