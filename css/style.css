@@ -629,7 +629,7 @@ form input[type="submit"] {
         width: 335px;
     }
     .bouton-Filtres{
-        width:40%;
+        width: 162px;
         padding: 4px 19px 4px 19px;
         
     }
@@ -645,6 +645,7 @@ form input[type="submit"] {
     section.hebergements{
         width:fit-content;
         background-color: #FFF;
+        margin-left: 5%;
     }
     .hebergements-cards{
     display: flex;
@@ -652,18 +653,17 @@ form input[type="submit"] {
    
     .hebergements-section{
         width:fit-content;
-        margin-left: 5%;
     }
     .card{
         width: 335px;
     }
     .hebergements-cards  .card img{
         object-fit: cover;
-        width: 335px;
+        width: 325px;
     }
     .hebergements-and-populaires .populaires{
         height: 100%;
-        width: 100%
+        width: 100%;
         margin-top: 0px;
         padding-top: 30px;
         padding-bottom: 30px;
@@ -693,7 +693,6 @@ form input[type="submit"] {
         display: flex;
         flex-direction: column;
         height: auto;
-        width: 375px;
         margin-left: 0px;
        gap: 15px
        ;
