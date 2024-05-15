@@ -139,6 +139,7 @@ section.populaires {
     font-weight:700 ;
     gap: 142PX;
     justify-content: space-between;
+
 }
 
 .populaires-cards{
@@ -642,6 +643,10 @@ form input[type="submit"] {
         width: 100%;
         padding: 0px;
     }
+    .populaires-title{
+        gap: 0%;
+        padding: 0 20px;
+    }
     section.hebergements{
         width:fit-content;
         background-color: #FFF;
@@ -663,7 +668,7 @@ form input[type="submit"] {
     }
     .hebergements-and-populaires .populaires{
         height: 100%;
-        width: 100%;
+        width: auto;
         margin-top: 0px;
         padding-top: 30px;
         padding-bottom: 30px;
@@ -675,17 +680,16 @@ form input[type="submit"] {
     }
     .hebergements-and-populaires section{
         padding:0%;
-        width: 100%;
         border-radius: 0%;
+        margin: 0%;
+        padding-left: 20px;
     }
     .populaires-cards{
         display: flex;
         flex-direction: column;
-        margin-left: 5%;
+       
     }
-    .fa-solid {
-        margin-right: 10px;
-    }
+ 
     #Activité-a-Marseille{
         margin: 0%;
     }
@@ -714,7 +718,8 @@ form input[type="submit"] {
         width: 375px;
         display: flex;
         flex-direction: column;
-    padding: 0%;
+        padding: 0%;
+        margin: 0%;
     }
     .footer-apropos,.footer-hebergement,.footer-Assistance{
         width: fit-content;
