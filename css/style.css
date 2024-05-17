@@ -564,12 +564,27 @@ form input[type="submit"] {
         padding: 0%;
 
     }
-  
-    
-    nav ul li:hover  {
-        border-bottom: 3px #0065FC solid;
-        color:#0065FC ;
+    nav ul li {
+        position: relative;
     }
+    
+    nav ul li::after {
+        content: "";
+        position: absolute;
+        bottom: -15px;
+        width: 150px;
+        height: 3px;
+        background-color: #0065FC;
+        right: 0;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+    }
+    
+    nav ul li:hover::after {
+        opacity: 1;
+    }
+     
+   
    
    nav  {
     display: flex;
@@ -612,9 +627,34 @@ form input[type="submit"] {
         display: inline-block; /* Afficher la loupe en tant que bouton */
     }
     button#loupe.loupe-btn{
-        background-color: #0065FC;
+        background-color: none;
+        display: 
     }
-
+    .form {
+        position: relative;
+    }
+    
+    .loupe-btn {
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: none;
+        border: none;
+        padding: 0;
+        margin: 0;
+        cursor: pointer;
+    }
+    
+    .loupe-btn img {
+        height: 100%;
+        width: auto;
+    }
+    button img{
+        padding: 0%;
+        margin: 0%;
+        border: 0solide ;
+    }
     .loupe-input {
         display: none /* Cacher le bouton de la loupe en tant qu'input */
     }
