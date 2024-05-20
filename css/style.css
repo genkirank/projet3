@@ -356,9 +356,10 @@ form input[type="submit"] {
     align-items: center;
     font-weight: 400;
 }
-.infobar>h3{
+.infobar>p{
     font-weight: 400;
     margin: 0%;
+    font-size: 16px;
 }
 
 #Afficherplus {
@@ -475,7 +476,9 @@ form input[type="submit"] {
         align-items: flex-start;
 
     }
-
+    .bouton-Filtres{
+        font-size: 16px;
+    }
     .quierie{
     display: flex;
     flex-direction:row ;
@@ -613,7 +616,7 @@ form input[type="submit"] {
     align-items: start; /* Centre verticalement les enfants flex */
     
    }
-   
+
    
     #loupe {
         background-image: url('images/icone-projet3/Vector.png');
@@ -628,7 +631,6 @@ form input[type="submit"] {
     }
     button#loupe.loupe-btn{
         background-color: none;
-        display: 
     }
     .form {
         position: relative;
@@ -672,7 +674,12 @@ form input[type="submit"] {
     .bouton-Filtres{
         width: 162px;
         padding: 4px 19px 4px 19px;
-        
+        font-size: 14px;
+        font-weight: 700;
+    }
+    .infobar>p{
+        font-size: 16px;
+        font-weight: 400;
     }
     .conteneur-2{
         margin-left: 0%;
@@ -761,6 +768,7 @@ form input[type="submit"] {
         padding: 0%;
         margin: 0%;
     }
+   
     .footer-apropos,.footer-hebergement,.footer-Assistance{
         width: fit-content;
         
