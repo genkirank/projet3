@@ -567,37 +567,61 @@ form input[type="submit"] {
         padding: 0%;
 
     }
+    
+    nav {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
+    }
+    
+    .logo {
+        padding: 30px;
+    }
+    
+    .bouton-nav {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 0 15px 0;
+        display: flex;
+        justify-content: space-evenly;
+        list-style-type: none;
+        margin: 0;
+    }
+    
     nav ul li {
         position: relative;
+        cursor: pointer;
+        padding: 10px;
+    }
+    
+    nav ul li a {
+        text-decoration: none;
+        color: black;
     }
     
     nav ul li::after {
         content: "";
         position: absolute;
         bottom: -15px;
-        width: 150px;
         height: 3px;
         background-color: #0065FC;
-        right: 0;
+        left: 50%;
+        right: 50%;
+        transition: left 0.3s ease-in-out, right 0.3s ease-in-out;
         opacity: 0;
-        transition: opacity 0.3s ease-in-out;
     }
     
-    nav ul li:hover::after {
+    nav ul li:hover::after,
+    nav ul li:focus::after {
+        left: 0;
+        right: 0;
         opacity: 1;
     }
-     
-   
-   
-   nav  {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    gap: 0px;
-   }
-   .logo{
-    padding: 30px;
-   }
+    
+    nav ul li:focus {
+        outline: none; /* Supprime le contour par défaut */
+    }
    body{
     gap: 30px;
    }
